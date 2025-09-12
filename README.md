@@ -66,6 +66,6 @@ Liberar toda la memoria utilizada.
 g++ -o p1 p1.cpp
 ./p1
 ```
-
+<img width="1878" height="991" alt="image" src="https://github.com/user-attachments/assets/f0b25015-1640-4fa5-8026-e91005485521" />
 
 
