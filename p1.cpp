@@ -1,8 +1,7 @@
 #include <iostream>
-#include <vector>
 #include <fstream>
 #include <sstream>
-#include "chainhash_base.h"
+#include "chainhash.h"
 
 using namespace std;
 

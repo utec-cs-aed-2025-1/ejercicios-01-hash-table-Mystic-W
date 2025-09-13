@@ -1,9 +1,8 @@
 #include <iostream>
-#include <vector>
-#include <string>
 #include <sstream>
 #include <algorithm>
-#include "chainhash_sol.h"
+#include <unordered_set>
+#include "chainhash.h"
 
 using namespace std;
 
@@ -18,12 +17,12 @@ vector<string> tokenize(const string& text) {
     vector<string> words;
     stringstream ss(text);
     string word;
-    
+
     while (ss >> word) {
         // Remover signos de puntuacion (por si acaso)
-        word.erase(remove_if(word.begin(), word.end(), 
+        word.erase(remove_if(word.begin(), word.end(),
                    [](char c) { return !isalnum(c); }), word.end());
-        
+
         if (!word.empty()) {
             words.push_back(toLowerCase(word));
         }
@@ -31,10 +30,27 @@ vector<string> tokenize(const string& text) {
     return words;
 }
 
-// TODO: Implementar el algoritmo Bag of Words
+// Implementar el algoritmo Bag of Words
 ChainHash<string, vector<int>> bagOfWords(const vector<string>& documentos) {
-    ChainHash<string, vector<int>> result(13);     
-    // TODO: Implementar algoritmo aquí    
+    ChainHash<string, vector<int>> result(13);
+
+    for (size_t docIndex = 0; docIndex < documentos.size(); ++docIndex) {
+        vector<string> tokens = tokenize(documentos[docIndex]);
+        unordered_set<string> uniqueWords(tokens.begin(), tokens.end());
+
+        for (const auto& word : uniqueWords) {
+            if (result.contains(word)) {
+                vector<int> docs = result.get(word);
+                docs.push_back(static_cast<int>(docIndex));
+                result.set(word, docs);
+            } else {
+                vector<int> docs;
+                docs.push_back(static_cast<int>(docIndex));
+                result.set(word, docs);
+            }
+        }
+    }
+
     return result;
 }
 

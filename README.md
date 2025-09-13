@@ -1,3 +1,5 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/INK5rVnQ)
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=20463295&assignment_repo_type=AssignmentRepo)
 # Tabla Hash con Chaining
 
 ## Descripción
@@ -64,6 +66,6 @@ Liberar toda la memoria utilizada.
 g++ -o p1 p1.cpp
 ./p1
 ```
-
-
-
+<img width="1878" height="991" alt="image" src="https://github.com/user-attachments/assets/f0b25015-1640-4fa5-8026-e91005485521" />
+<img width="2519" height="1383" alt="image" src="https://github.com/user-attachments/assets/208b4182-9ae0-452c-864e-4a9c000f80f4" />
+<img width="2534" height="1381" alt="image" src="https://github.com/user-attachments/assets/b4f74e81-3ee2-4415-886a-b2b611ae26cb" />
