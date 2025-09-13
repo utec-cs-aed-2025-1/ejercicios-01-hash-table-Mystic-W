@@ -67,5 +67,6 @@ g++ -o p1 p1.cpp
 ./p1
 ```
 <img width="1878" height="991" alt="image" src="https://github.com/user-attachments/assets/f0b25015-1640-4fa5-8026-e91005485521" />
+<img width="2519" height="1383" alt="image" src="https://github.com/user-attachments/assets/208b4182-9ae0-452c-864e-4a9c000f80f4" />
 
 
